@@ -3,3 +3,6 @@
 !.env.example
 memory.db
 memory-agent.pid
+task_plan.md
+findings.md
+progress.md
