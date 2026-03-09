@@ -28,12 +28,18 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from aiohttp import web
+from dotenv import load_dotenv
 from google.adk.agents import Agent
 from google.adk.runners import Runner
 from google.adk.sessions import InMemorySessionService
 from google.genai import types
 
 # ─── Config ────────────────────────────────────────────────────
+
+PROJECT_ROOT = Path(__file__).resolve().parent
+
+# Load the project-local .env file without overriding variables already provided by the shell.
+load_dotenv(PROJECT_ROOT / ".env", override=False)
 
 MODEL = os.getenv("MODEL", "gemini-3.1-flash-lite-preview")
 DB_PATH = os.getenv("MEMORY_DB", "memory.db")

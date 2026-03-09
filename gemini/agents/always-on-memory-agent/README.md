@@ -125,6 +125,12 @@ pip install -r requirements.txt
 export GOOGLE_API_KEY="your-gemini-api-key"
 ```
 
+Or create a local `.env` file in the project root:
+
+```bash
+cp .env.example .env
+```
+
 Get your API key from [Vertex AI Studio](https://vertexai.google.com/) or [Google AI Studio](https://aistudio.google.com/).
 
 ### 3. Start the agent
