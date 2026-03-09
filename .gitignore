@@ -185,3 +185,8 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# Local planning files
+/task_plan.md
+/findings.md
+/progress.md
